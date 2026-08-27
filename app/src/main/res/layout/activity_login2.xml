@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -10,9 +12,31 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="kkkkk"
-        />
+        android:hint="Oi"
+        app:endIconMode="clear_text"
+        app:startIconDrawable=""
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="131dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="617dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
