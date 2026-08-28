@@ -9,34 +9,81 @@
     android:layout_height="match_parent"
     tools:context=".activityuser">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="335dp"
         android:layout_height="wrap_content"
-        android:hint="Oi"
-        app:endIconMode="clear_text"
-        app:startIconDrawable=""
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="131dp" />
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:text="User name"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <ImageView
+        end
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:text="Password"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="360dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="450dp" />
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="419dp" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forget Password?"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="470dp" />
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="432dp" />
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="617dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="587dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have  account?"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="587dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have  account?"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="368dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
