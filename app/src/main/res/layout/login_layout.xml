@@ -26,7 +26,7 @@
         app:boxCornerRadiusBottomStart="25dp"
         app:boxCornerRadiusTopEnd="25dp"
         app:boxCornerRadiusTopStart="25dp"
-        app:endIconDrawable="@drawable/baseline_person"
+        app:endIconDrawable="@drawable/logo"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText

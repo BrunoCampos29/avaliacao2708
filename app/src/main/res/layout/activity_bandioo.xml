@@ -23,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/baseline_person" />
+        android:src="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
