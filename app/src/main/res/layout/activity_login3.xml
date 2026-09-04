@@ -1,90 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityLogin3">
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
 
-    <Button
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:background="#2C2C2C"
+        android:src="@drawable/baseline_person" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="User Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="50" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="15" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="E-mail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="50" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="15" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:text="Sign up"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="468dp" />
+        android:layout_gravity="center"
+        android:text="Allow Term &amp; Conditions" />
 
-    <Button
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="420dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Allow Term e Conditions"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="431dp" />
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign up" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="335dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:maxLength="50"
-        android:text="User name"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="162dp" />
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:maxLength="50"
-        android:text="Password"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="220dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? " />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:maxLength="50"
-        android:text="E-mail"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="283dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="#0F0F0F"
+            android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:maxLength="50"
-        android:text="Phone"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="343dp" />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an account?"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="651dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign in?"
-        android:textSize="22dp"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="670dp" />
-
-    <Button
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text=">"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="651dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
